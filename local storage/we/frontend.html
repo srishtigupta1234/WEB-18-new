@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            display:grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(4,auto);
+            gap:30px;
+        }
+        #container>div>p+img{
+            margin-top:-20px;
+            margin-left:-20px;
+            height: 60px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Frontend</h1>
+    <div id ="container"></div>
+</body>
+</html>
+<script>
+    var investorArr = JSON.parse(localStorage.getItem("investorData"));
+    console.log(investorArr)
+
+    
+</script>

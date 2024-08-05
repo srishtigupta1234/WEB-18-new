@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    //getItem, setItem, clear, removeItem ,, JSON.stringify(), JSON.parse()
+    localStorage.setItem("mobile",9012334589)
+    //string
+    localStorage.setItem("name","chandra")
+    var student1 = "gautam"
+    localStorage.setItem("sname",student1)
+    var student2 = "Irfan"
+    localStorage.setItem("sname2",student2)
+    //8mb
+    //getItem-localStorage.getItem("key")
+    var getMobile = localStorage.getItem("mobile")
+    console.log(getMobile)
+    console.log(localStorage.getItem("name"))
+    //Whenever you are trying to access something which is not true will return null. 
+    console.log(localStorage.getItem("sname"))
+    console.log(localStorage.getItem("sname2"))
+
+    var obj = {
+        name:"masai",
+        name:"school"
+    }
+    //preference given to last name.+
+    console.log(obj.name)
+
+    
+</script>
